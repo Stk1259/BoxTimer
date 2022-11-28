@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fight_textview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_gradient_main">
+
+
+        <ImageView
+            android:id="@+id/empty_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_emty_button" />
+
+        <ImageView
+            android:id="@+id/button_with_lines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_emty_button" />
+
+        <ImageView
+            android:id="@+id/line_in_button_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="27dp"
+            app:layout_constraintStart_toStartOf="@+id/button_with_lines"
+            app:layout_constraintTop_toTopOf="@+id/button_with_lines"
+            app:srcCompat="@drawable/line_for_button" />
+
+        <ImageView
+            android:id="@+id/line_in_button_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="6dp"
+            app:layout_constraintStart_toStartOf="@+id/button_with_lines"
+            app:layout_constraintTop_toTopOf="@+id/line_in_button_1"
+            app:srcCompat="@drawable/line_for_button" />
+
+        <ImageView
+            android:id="@+id/line_in_button_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="6dp"
+            app:layout_constraintStart_toStartOf="@+id/button_with_lines"
+            app:layout_constraintTop_toTopOf="@+id/line_in_button_2"
+            app:srcCompat="@drawable/line_for_button" />
+
+        <TextView
+            android:id="@+id/boxing_history_text"
+            style="@style/MainTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="BOXING TIMER"
+            android:textFontWeight="500"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toTopOf="@+id/main_timer_square_inage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/main_timer_square_inage"
+            android:layout_width="467dp"
+            android:layout_height="370dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/horizontal_main_timer_image" />
+
+        <TextView
+            android:id="@+id/main_timer_text"
+            style="@style/MainTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="03:00"
+            android:textFontWeight="500"
+            android:textSize="120sp"
+            app:layout_constraintBottom_toBottomOf="@+id/main_timer_square_inage"
+            app:layout_constraintEnd_toEndOf="@+id/main_timer_square_inage"
+            app:layout_constraintStart_toStartOf="@+id/main_timer_square_inage"
+            app:layout_constraintTop_toTopOf="@+id/main_timer_square_inage" />
+
+        <TextView
+            android:id="@+id/raund_text_view"
+            style="@style/MainTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="РАУНД"
+            android:textFontWeight="500"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView_start"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/empty_button"
+            app:layout_constraintVertical_bias="0.55" />
+
+        <TextView
+            android:id="@+id/raunds_amount_text_view"
+            style="@style/MainTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="36dp"
+            android:text="1/12"
+            android:textFontWeight="500"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView_reset"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_with_lines" />
+
+        <ImageView
+            android:id="@+id/imageView_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="57dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/circle_image_view" />
+
+        <TextView
+            android:id="@+id/start_text_in_circle"
+            style="@style/MainTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:text="СТАРТ"
+            android:textFontWeight="500"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView_start"
+            app:layout_constraintEnd_toEndOf="@+id/imageView_start"
+            app:layout_constraintStart_toStartOf="@+id/imageView_start"
+            app:layout_constraintTop_toTopOf="@+id/imageView_start" />
+
+        <ImageView
+            android:id="@+id/imageView_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="57dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/circle_image_view" />
+
+        <TextView
+            android:id="@+id/reset_text_in_circle"
+            style="@style/MainTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:text="СБРОС"
+            android:textFontWeight="500"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView_reset"
+            app:layout_constraintEnd_toEndOf="@+id/imageView_reset"
+            app:layout_constraintStart_toStartOf="@+id/imageView_reset"
+            app:layout_constraintTop_toTopOf="@+id/imageView_reset" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

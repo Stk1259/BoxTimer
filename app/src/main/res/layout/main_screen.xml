@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fight_textview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient_main">
+
+
+    <TextView
+        android:id="@+id/main_timer_text"
+        style="@style/MainTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="03:00"
+        android:textFontWeight="500"
+        android:textSize="120sp"
+        app:layout_constraintBottom_toBottomOf="@+id/square_imageView"
+        app:layout_constraintEnd_toEndOf="@+id/square_imageView"
+        app:layout_constraintStart_toStartOf="@+id/square_imageView"
+        app:layout_constraintTop_toTopOf="@+id/square_imageView" />
+
+    <ImageView
+        android:id="@+id/empty_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="19dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_emty_button" />
+
+    <TextView
+        android:id="@+id/fight_text"
+        style="@style/MainTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="140dp"
+        android:text="БОЙ"
+        android:textFontWeight="500"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fight_timer_text"
+        style="@style/MainTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:text="03:00"
+        android:textFontWeight="500"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fight_text" />
+
+    <ImageView
+        android:id="@+id/button_with_lines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_emty_button" />
+
+    <TextView
+        android:id="@+id/chill_text"
+        style="@style/MainTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="43dp"
+        android:text="ОТДЫХ"
+        android:textFontWeight="500"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/chill_timer_text"
+        style="@style/MainTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="51dp"
+        android:text="01:00"
+        android:textFontWeight="500"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chill_text" />
+
+    <ImageView
+        android:id="@+id/line_in_button_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="27dp"
+        app:layout_constraintStart_toStartOf="@+id/button_with_lines"
+        app:layout_constraintTop_toTopOf="@+id/button_with_lines"
+        app:srcCompat="@drawable/line_for_button" />
+
+    <ImageView
+        android:id="@+id/line_in_button_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toStartOf="@+id/button_with_lines"
+        app:layout_constraintTop_toTopOf="@+id/line_in_button_1"
+        app:srcCompat="@drawable/line_for_button" />
+
+    <ImageView
+        android:id="@+id/line_in_button_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toStartOf="@+id/button_with_lines"
+        app:layout_constraintTop_toTopOf="@+id/line_in_button_2"
+        app:srcCompat="@drawable/line_for_button" />
+
+    <TextView
+        android:id="@+id/rounds_text"
+        style="@style/MainTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:text="РАУНД1/12"
+        android:textFontWeight="500"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/square_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/main_timer_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rounds_text" />
+
+    <ImageView
+        android:id="@+id/imageView_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="34dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/square_imageView"
+        app:srcCompat="@drawable/circle_image_view" />
+
+    <TextView
+        android:id="@+id/start_text_in_circle"
+        style="@style/MainTextViewStyle"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:text="СТАРТ"
+        android:textFontWeight="500"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_start"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_start"
+        app:layout_constraintStart_toStartOf="@+id/imageView_start"
+        app:layout_constraintTop_toTopOf="@+id/imageView_start" />
+
+    <ImageView
+        android:id="@+id/imageView_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/square_imageView"
+        app:srcCompat="@drawable/circle_image_view" />
+
+    <TextView
+        android:id="@+id/reset_text_in_circle"
+        style="@style/MainTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:text="СБРОС"
+        android:textFontWeight="500"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_reset"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_reset"
+        app:layout_constraintStart_toStartOf="@+id/imageView_reset"
+        app:layout_constraintTop_toTopOf="@+id/imageView_reset" />
+
+    <TextView
+        android:id="@+id/boxing_history_text"
+        style="@style/MainTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="BOXING TIMER"
+        android:textFontWeight="500"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
